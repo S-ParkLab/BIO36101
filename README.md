@@ -1,5 +1,5 @@
-# BIO36101
-## [Lecture] A single-cell sequencing guide for immunologists
+## BIO36101
+### [Lecture] A single-cell sequencing guide for immunologists
 ## scRNA_seq_analysis
 ### 1. scRNA_seq_with_Seurat
 * Retrieved and Modified R script from Seurat v5 PBMC tutorial.
