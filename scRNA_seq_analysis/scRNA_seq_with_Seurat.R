@@ -22,6 +22,7 @@ seu <- subset(seu, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent.m
 
 VlnPlot(seu, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 
+### Normalization
 # with SCTransform
 seu <- SCTransform(seu, vars.to.regress = "percent.mt", vst.flavor = "v2", method = "glmGamPoi")
 
@@ -30,8 +31,10 @@ seu <- NormalizeData(seu)
 seu <- FindVariableFeatures(seu, selection.method = "vst", nfeatures = 2000)
 seu <- ScaleData(seu, vars.to.regress = "percent.mt")
 
+### Principal Component Analysis (PCA)
 seu <- RunPCA(seu)
 
+### UMAP, Find neighbors, & Graph-based clustering
 seu <- RunUMAP(seu, dims = 1:10)
 seu <- FindNeighbors(seu, dims = 1:10)
 seu <- FindClusters(seu, resolution = 0.5)
@@ -47,6 +50,7 @@ seu <- FindClusters(seu, resolution = 0.5, algorithm = 4)
 DimPlot(seu, reduction = "umap", label = TRUE)
 DimPlot(seu, reduction = "umap", group.by = "orig.ident", label = FALSE)
 
+### Marker genes
 # with SCTransform
 DefaultAssay(seu) <- "SCT"
 Idents(seu) <- "seurat_clusters"
@@ -61,7 +65,11 @@ Idents(seu) <- "seurat_clusters"
 markers <- FindAllMarkers(seu, test.use = "wilcox", 
                           min.pct = 0.25, only.pos = TRUE)
 
-# Cell type annotation
+VlnPlot(pbmc, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
+FeaturePlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", 
+                               "FCGR3A", "LYZ", "PPBP", "CD8A"))
+
+### Cell type annotation
 new.cluster.ids <- c("Naive CD4 T", "CD14+ Mono", "Memory CD4 T", "B", "CD8 T", "FCGR3A+ Mono",
                      "NK", "DC", "Platelet")
 names(new.cluster.ids) <- levels(seu)
@@ -70,7 +78,7 @@ DimPlot(seu, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 
 seu$annotation <- Idents(seu)
 
-# differentially expressed genes
+### Differentially expressed genes
 # with SCTransform
 deg_list <- FindMarkers(seu, assay = "SCT", test.use = "wilcox", 
                         ident.1 = "Memory CD4 T", 
