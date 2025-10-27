@@ -12,10 +12,13 @@
 ## scRNA_seq_analysis_multi (Report)
 ### 1. scRNA_seq_multi_with_Harmony.R
 * Main downstream analysis using Seurat.
-* Double removal by scDblFinder.
+* Double removal using scDblFinder.
 * Normalization using SCTransform v2 with the Gamma-Poisson model fitting (glmGamPoi).
 * Data integration using Harmony.
 * To perform multi-sample analysis.
 
-### 2. scRNA_seq_multi_with_Harmony.ipynb
+### 2. scDblFinder.R
+* Running scDblFinder to perform doublet removal.
+
+### 3. scRNA_seq_multi_with_Harmony.ipynb
 * (Plan to upload)
