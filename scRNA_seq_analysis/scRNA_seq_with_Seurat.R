@@ -1,17 +1,15 @@
 library(dplyr)
 library(Seurat)
 library(patchwork)
-library(DoubletFinder)
 library(ggplot2)
 library(cowplot)
 library(sets)
 library(ggpubr)
-library(SeuratDisk)
 
 options(Seurat.object.assay.version = "v5")
 
 ### data.dir = directory for 10X output files (Please refer to Seurt vignette)
-seu.data <- Read10X(data.dir = "")
+seu.data <- Read10X(data.dir = "C:/Users/psj89/Documents/pbmc3k_filtered_gene_bc_matrices/filtered_gene_bc_matrices/hg19/")
 seu <- CreateSeuratObject(counts = seu.data, project = "pbmc3k", min.cells = 3, min.features = 200)
 
 seu[["percent.mt"]] <- PercentageFeatureSet(seu, pattern = "^MT-")
