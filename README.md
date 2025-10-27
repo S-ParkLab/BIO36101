@@ -23,7 +23,14 @@
 
 ## Python
 ### 1. scRNA_seq_multi_with_Harmony.ipynb
-* (Plan to upload)
+* Main downstream analysis using Scanpy.
+* Doublet removal using scDblFinder.
+* Log1p-Normalization.
+* Data integration using Harmony.
+* To perform multi-sample analysis.
+
+### 2. command_scDblFinder_Python.txt
+* To install scDblFinder package.
 
 ## References
 ### 1. (Tutorial) Data retrieved from 10X PBMC 3k.
