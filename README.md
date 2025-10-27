@@ -6,7 +6,8 @@
 * To perform single-sample analysis.
 
 ### 2. scRNA_seq_with_Scanpy.ipynb
-* (Plan to upload)
+* Retrieved & Modified .ipynb file from Scanpy PBMC tutorial.
+* To perform single-sample analysis.
 
 ## scRNA_seq_analysis_multi (Report)
 ### 1. scRNA_seq_multi_with_Harmony.R
