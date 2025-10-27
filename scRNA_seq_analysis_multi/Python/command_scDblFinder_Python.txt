@@ -1,0 +1,6 @@
+# Install mamba
+conda install conda-forge::mamba
+
+# Install SingleCellExperiment & scDblFinder
+mamba install bioconda::bioconductor-singlecellexperiment
+mamba install bioconda::bioconductor-scdblfinder
