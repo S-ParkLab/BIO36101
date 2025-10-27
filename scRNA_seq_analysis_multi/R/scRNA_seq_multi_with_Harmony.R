@@ -9,7 +9,7 @@ library(SeuratDisk)
 
 options(Seurat.object.assay.version = "v5")
 
-sample_list <- c("HC1120E", "DLE1113E", "SLE1116E")
+sample_list <- c("DLE1113E", "SLE1116E")
 seu.list <- as.list(sample_list)
 names(seu.list) <- sample_list
 
