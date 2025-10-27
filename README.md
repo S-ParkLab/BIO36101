@@ -2,11 +2,11 @@
 ### [Lecture] A single-cell sequencing guide for immunologists - BIO36101 Cell biology & Genetics Laboratory course @ UNIST
 ## scRNA_seq_analysis (Tutorial)
 ### 1. scRNA_seq_with_Seurat.R
-* Retrieved & Modified R script from Seurat v5 PBMC tutorial.
+* Retrieved & Modified R script from Seurat v5 PBMC 3k tutorial.
 * To perform single-sample analysis.
 
 ### 2. scRNA_seq_with_Scanpy.ipynb
-* Retrieved & Modified .ipynb file from Scanpy PBMC tutorial.
+* Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
 
 ## scRNA_seq_analysis_multi (Report)
