@@ -10,6 +10,7 @@
 * To perform single-sample analysis.
 
 ## scRNA_seq_analysis_multi (Report)
+### R
 ### 1. scRNA_seq_multi_with_Harmony.R
 * Main downstream analysis using Seurat.
 * Double removal using scDblFinder.
@@ -20,5 +21,6 @@
 ### 2. scDblFinder.R
 * Running scDblFinder to perform doublet removal.
 
-### 3. scRNA_seq_multi_with_Harmony.ipynb
+### Python
+### 1. scRNA_seq_multi_with_Harmony.ipynb
 * (Plan to upload)
