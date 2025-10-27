@@ -13,6 +13,7 @@
 ### 1. scRNA_seq_multi_with_Harmony.R
 * Main downstream analysis using Seurat.
 * Double removal by scDblFinder.
+* Normalization using SCTransform v2 with the Gamma-Poisson model fitting (glmGamPoi).
 * Data integration using Harmony.
 * To perform multi-sample analysis.
 
