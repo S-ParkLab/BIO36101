@@ -11,7 +11,10 @@
 
 ## scRNA_seq_analysis_multi (Report)
 ### 1. scRNA_seq_multi_with_Harmony.R
-* (Plan to upload)
+* Main downstream analysis using Seurat.
+* Double removal by scDblFinder.
+* Data integration using Harmony.
+* To perform multi-sample analysis.
 
 ### 2. scRNA_seq_multi_with_Harmony.ipynb
 * (Plan to upload)
