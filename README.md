@@ -24,3 +24,7 @@
 ## Python
 ### 1. scRNA_seq_multi_with_Harmony.ipynb
 * (Plan to upload)
+
+## References
+### 1. (Tutorial) Data retrieved from 10X PBMC 3k.
+### 2. (Report) Data retrieved from GSE179633.
