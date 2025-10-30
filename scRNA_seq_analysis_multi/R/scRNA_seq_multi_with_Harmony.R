@@ -68,7 +68,7 @@ seu.combined <- IntegrateLayers(
 ElbowPlot(seu.combined)
 
 ### UMAP with Harmony
-seu.combined <- RunUMAP(seu.combined, reduction = "harmony", dims = 1:15)
+seu.combined <- RunUMAP(seu.combined, reduction = "harmony", dims = 1:15, metric = "euclidean")
 seu.combined <- FindNeighbors(seu.combined, reduction = "harmony", dims = 1:15)
 seu.combined <- FindClusters(seu.combined, resolution = 0.5)
 
