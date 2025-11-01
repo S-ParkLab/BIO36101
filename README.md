@@ -18,7 +18,7 @@
 * Using 3000 highly variable genes (SCTransform default).
 * Data scaling with regressing out percent.mt.
 * Data integration using Harmony.
-* Using 10 harmony-corrected dimensions.
+* Using 15 harmony-corrected dimensions.
 * Using metric="euclidean" to perform RunUMAP function.
 * To perform multi-sample analysis.
 
@@ -33,7 +33,7 @@
 * Using 2000 highly variable genes.
 * Data scaling with regressing out total_counts & pct_counts_mt.
 * Data integration using Harmony.
-* Using 15 harmony-corrected dimensions.
+* Using 10 harmony-corrected dimensions.
 * Using metric="euclidean" to perform sc.pp.neighbors function.
 * To perform multi-sample analysis.
 
