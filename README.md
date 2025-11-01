@@ -19,7 +19,7 @@
 * Data scaling with regressing out percent.mt.
 * Data integration using Harmony.
 * Using 15 harmony-corrected dimensions.
-* Using the Euclidean distance metric to measure distance in the input space.
+* Using the Euclidean distance metric.
 * To perform multi-sample analysis.
 
 ### 2. scDblFinder.R
@@ -34,7 +34,7 @@
 * Data scaling with regressing out total_counts & pct_counts_mt.
 * Data integration using Harmony.
 * Using 10 harmony-corrected dimensions.
-* Using the Euclidean distance metric to measure distance in the input space.
+* Using the Euclidean distance metric.
 * To perform multi-sample analysis.
 
 ### 2. command_scDblFinder_Python.txt
