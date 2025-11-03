@@ -41,6 +41,6 @@
 * To install scDblFinder package.
 
 ## References
-### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
-### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
-### 3. (Report) Data retrieved from GSE179633.
+#### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
+#### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
+#### 3. (Report) Data retrieved from GSE179633.
