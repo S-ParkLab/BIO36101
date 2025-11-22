@@ -2,7 +2,7 @@
 ## Data download
 ### 1. Enter GSE179633 accession (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179633).
 <p align="center">
-<img width="750" src="src/NCBI_GEO_database_0_GSE179633.png">
+<img width="650" src="src/NCBI_GEO_database_0_GSE179633.png">
 </p>
 
 <hr>
