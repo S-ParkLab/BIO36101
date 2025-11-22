@@ -16,6 +16,8 @@
 
 ### 3. Unzip GSE179633_RAW.tar.gz directly or Unzip GSE179633_RAW.tar.gz using "tar -xvzf" command on your terminal.
 
+<hr>
+
 ## Report format
 ### 1. Please write the report based on the results of scRNA-seq data analysis using two biological samples, DLE1113E & SLE1116E.
 ### 2. Free format, but must contain (1) UMAP visualization, (2) Canonical marker gene expression <on UMAP 2D embedding space or in Violin plot or in Dot plot>, (3) Code & Results for Cell type annotation and DEG analysis.
