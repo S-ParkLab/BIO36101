@@ -75,7 +75,7 @@ marker_genes_canonical <- c("MS4A1", "GNLY", "CD3E", "CD14", "FCGR3A", "FCER1A",
 FeaturePlot(seu, features = marker_genes_canonical)
 
 ### Dot plot for canonical marker genes
-DotPlot(pbmc3k.final, features = marker_genes_canonical) + RotatedAxis()
+DotPlot(seu, features = marker_genes_canonical) + RotatedAxis()
 
 ### Cell type annotation
 new.cluster.ids <- c("Naive CD4 T", "CD14+ Mono", "Memory CD4 T", "B", "CD8 T", "FCGR3A+ Mono",
@@ -100,3 +100,4 @@ deg_list <- FindMarkers(seu, assay = "RNA", test.use = "wilcox",
 deg_list <- deg_list[which(deg_list$p_val_adj < 0.05), ]
 
 deg_list <- deg_list[which(abs(deg_list$avg_log2FC) > 0.5), ]
+
