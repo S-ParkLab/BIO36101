@@ -2,14 +2,14 @@
 ## Data download
 ### 1. Enter GSE179633 accession (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179633).
 <p align="center">
-<img width="750" src="scRNA_seq_analysis_multi/src/NCBI_GEO_database_0_GSE179633.png">
+<img width="750" src="src/NCBI_GEO_database_0_GSE179633.png">
 </p>
 
 <hr>
 
 ### 2. Click "(custom)" of Supplementary file table, then choose & download "GSM6031362_DLE1113E.tar.gz" & "GSM6031375_SLE1116E.tar.gz".
 <p align="center">
-<img width="750" src="scRNA_seq_analysis_multi/src/NCBI_GEO_database_1_GSE179633.png">
+<img width="750" src="src/NCBI_GEO_database_1_GSE179633.png">
 </p>
 
 <hr>
