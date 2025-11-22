@@ -9,7 +9,7 @@
 
 ### 2. Click "(custom)" of Supplementary file table, then choose & download "GSM6031362_DLE1113E.tar.gz" & "GSM6031375_SLE1116E.tar.gz".
 <p align="center">
-<img width="700" src="src/NCBI_GEO_database_1_GSE179633.png">
+<img width="650" src="src/NCBI_GEO_database_1_GSE179633.png">
 </p>
 
 <hr>
