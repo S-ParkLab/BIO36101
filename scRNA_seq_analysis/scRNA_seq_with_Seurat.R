@@ -32,6 +32,9 @@ seu <- ScaleData(seu, vars.to.regress = "percent.mt")
 ### Principal Component Analysis (PCA)
 seu <- RunPCA(seu)
 
+### Elbow plot for PCA
+ElbowPlot(seu)
+
 ### UMAP, Find neighbors, & Graph-based clustering
 seu <- RunUMAP(seu, dims = 1:10)
 seu <- FindNeighbors(seu, dims = 1:10)
@@ -42,7 +45,7 @@ seu <- FindClusters(seu, resolution = 0.5)
 #reticulate::install_python(version = "3.10")
 #reticulate::py_install("leidenalg")
 #reticulate::py_install("pandas")
-seu <- FindClusters(seu, resolution = 0.5, algorithm = 4)
+#seu <- FindClusters(seu, resolution = 0.5, algorithm = 4)
 #####
 
 DimPlot(seu, reduction = "umap", label = TRUE)
@@ -63,9 +66,16 @@ Idents(seu) <- "seurat_clusters"
 markers <- FindAllMarkers(seu, test.use = "wilcox", 
                           min.pct = 0.25, only.pos = TRUE)
 
-VlnPlot(pbmc, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
-FeaturePlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", 
-                               "FCGR3A", "LYZ", "PPBP", "CD8A"))
+### Violin plot for canonical marker genes
+VlnPlot(seu, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
+
+marker_genes_canonical <- c("MS4A1", "GNLY", "CD3E", "CD14", "FCGR3A", "FCER1A", "LYZ", "PPBP", "CD8A")
+
+### Canonical marker gene expression on the UMAP 2D embedding space
+FeaturePlot(seu, features = marker_genes_canonical)
+
+### Dot plot for canonical marker genes
+DotPlot(pbmc3k.final, features = marker_genes_canonical) + RotatedAxis()
 
 ### Cell type annotation
 new.cluster.ids <- c("Naive CD4 T", "CD14+ Mono", "Memory CD4 T", "B", "CD8 T", "FCGR3A+ Mono",
@@ -88,4 +98,5 @@ deg_list <- FindMarkers(seu, assay = "RNA", test.use = "wilcox",
                         ident.2 = "Naive CD4 T")
 
 deg_list <- deg_list[which(deg_list$p_val_adj < 0.05), ]
+
 deg_list <- deg_list[which(abs(deg_list$avg_log2FC) > 0.5), ]
