@@ -30,11 +30,11 @@
 <hr>
 
 ## Due date
-### 5. The due date for the report is before the final exam (December 19, 11:59 PM).
-#### 5-1. Even if you submit your report after the deadline, I'll not give you zero. However, a penalty will be applied based on the exponential decay function of the number of hours elapsed since the deadline. When $t$ is the number of hours, the score is given by:
+### The due date for the report is before the final exam (December 19, 11:59 PM).
+#### 1. Even if you submit your report after the deadline, I'll not give you zero. However, a penalty will be applied based on the exponential decay function of the number of hours elapsed since the deadline. When $t$ is the number of hours, the score is given by:
 
 $$
 \text{(Adjusted score)} = e^{-t} \cdot \text{(Your original score)}
 $$
 
-#### 5-2. For your convenience in preparing the report, alternative options such as those described in 3. or 4. above have been provided. However, if you abuse this policy by notifying me of such issues only right before the due date, or by using these alternative options to write and submit your report without any prior communication, the score for your report will start with a 50% deduction.
+#### 2. For your convenience in preparing the report, alternative options such as those described in 3. or 4. above have been provided. However, if you abuse this policy by notifying me of such issues only right before the due date, or by using these alternative options to write and submit your report without any prior communication, the score for your report will start with a 50% deduction.
