@@ -27,6 +27,9 @@
 
 ### 4. If your problems remain after using only one sample, or if you cannot use your computer due to any issues, you can write the report based on the paper (https://www.nature.com/articles/s41467-022-35209-1). Free format, but I recommend that you include (1) Your biological interpretation and (2) Figures provided by the paper in your report.
 
+<hr>
+
+## Due date
 ### 5. The due date for the report is before the final exam (December 19, 11:59 PM).
 #### 5-1. Even if you submit your report after the deadline, I'll not give you zero. However, a penalty will be applied based on the exponential decay function of the number of hours elapsed since the deadline. When $t$ is the number of hours, the score is given by:
 
