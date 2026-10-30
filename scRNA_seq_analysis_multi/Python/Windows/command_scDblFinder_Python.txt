@@ -1,0 +1,60 @@
+[R]
+1. Open RStudio.
+
+2. If you don't have BiocManager, please install BiocManger by executing install.packages("BiocManager").
+
+3. Then, install SingleCellExperiment & scDblFinder by using: 
+BiocManager::install(
+  c("SingleCellExperiment", "scDblFinder"),
+  update = FALSE,
+  ask = FALSE
+)
+
+[Windows terminal & Anaconda3]
+1. Please download & install anaconda3.
+
+2. Open terminal.
+
+3. conda install conda-forge::mamba
+
+4. conda init
+5. conda activate
+
+6. mamba create -n scrna_multi python=3.9
+7. conda activate scrna_multi
+
+8. pip install rpy2
+9. pip install scanpy[leiden]
+10. pip install anndata2ri
+11. pip install scikit-misc
+
+12. If your numpy version >= 2.x, please downgrade numpy version by using: 
+python -m pip uninstall -y numpy
+pip install numpy==1.26.4
+
+13. pip install harmonypy==0.0.10
+
+14. pip install ipykernel
+15. python -m ipykernel install --user --name env_scrna_multi
+16. Open jupyter notebook.
+17. Change your kernel Python3 to env_scrna_multi.
+
+[Caution]
+*** DLL load error during pip install?
+1. where /r "%USERPROFILE%\anaconda3\pkgs" ffi.dll
+
+2. mkdir "%TEMP%\scrna_ffi_test"
+
+3. copy "%USERPROFILE%\anaconda3\pkgs\libffi-3.4.8-h42d73b9_3\Library\bin\ffi.dll" "%TEMP%\scrna_ffi_test\ffi.dll"
+
+4. python -c "import os; os.add_dll_directory(os.path.join(os.environ['TEMP'],'scrna_ffi_test')); import ctypes; print('ctypes OK')"
+
+5. If you can see 'ctypes OK', please run the command below: 
+copy "%USERPROFILE%\anaconda3\pkgs\libffi-3.4.8-h42d73b9_3\Library\bin\ffi.dll" "%CONDA_PREFIX%\Library\bin\ffi.dll"
+
+6. python -c "import ctypes; print('ctypes OK')"
+
+7. python -m pip --version
+
+8. If you can see 'ctypes OK' again, reinstall required packages by using pip install.
+"""
