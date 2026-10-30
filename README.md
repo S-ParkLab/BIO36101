@@ -1,5 +1,8 @@
 ## BIO36101
 ### [Lecture] A single-cell sequencing guide for immunologists - BIO36101 Cell biology & Genetics Laboratory course @ UNIST
+
+## Note: This course primarily uses R and the Seurat package for single-cell data analysis. Python-based scripts using Scanpy are also provided for reference but will not be used during class. However, students may use Python to complete and submit their reports.
+
 ## scRNA_seq_analysis (Tutorial)
 ### 1. scRNA_seq_with_Seurat.R
 * Retrieved & Modified R script from Seurat v5 PBMC 3k tutorial.
@@ -25,7 +28,7 @@
 ### 2. scDblFinder.R
 * Running scDblFinder to perform doublet removal.
 
-## Python
+## Python (Windows)
 ### 1. scRNA_seq_multi_with_Harmony.ipynb
 * Main downstream analysis using Scanpy.
 * Doublet removal using scDblFinder.
@@ -38,7 +41,7 @@
 * To perform multi-sample analysis.
 
 ### 2. command_scDblFinder_Python.txt
-* To install scDblFinder package.
+* To install required packages, including scDblFinder.
 
 ## References
 #### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
