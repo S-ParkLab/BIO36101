@@ -1,7 +1,7 @@
 ## BIO36101
 ### [Lecture] A single-cell sequencing guide for immunologists - BIO36101 Cell biology & Genetics Laboratory course @ UNIST
 
-## Note: This course primarily uses R and the Seurat package for single-cell data analysis. Python-based scripts using Scanpy are also provided for reference but will not be used during class. However, students may use Python to complete and submit their reports.
+### Note: This course primarily uses R and the Seurat package for single-cell data analysis. Python-based scripts using Scanpy are also provided for reference but will not be used during class. However, students may use Python to complete and submit their reports.
 
 ## scRNA_seq_analysis (Tutorial)
 ### 1. scRNA_seq_with_Seurat.R
