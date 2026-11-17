@@ -12,6 +12,12 @@
 * Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
 
+## References
+#### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
+#### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
+#### 3. (Report) Data retrieved from GSE179633.
+
+
 ## scRNA_seq_analysis_multi
 ## R
 ### 1. scRNA_seq_multi_with_Harmony.R
@@ -42,8 +48,3 @@
 
 ### 2. command_scDblFinder_Python.txt
 * To install required packages, including scDblFinder.
-
-## References
-#### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
-#### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
-#### 3. (Report) Data retrieved from GSE179633.
