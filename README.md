@@ -12,7 +12,7 @@
 * Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
 
-## scRNA_seq_analysis_multi (Report)
+## scRNA_seq_analysis_multi
 ## R
 ### 1. scRNA_seq_multi_with_Harmony.R
 * Main downstream analysis using Seurat.
