@@ -17,7 +17,7 @@
 #### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
 #### 3. (Report) Data retrieved from GSE179633.
 ##
-### Deprecated
+### [Deprecated]
 #### (Although not used for reports or classes, multiple sample versions of the scripts are also provided.)
 #### scRNA_seq_analysis_multi
 ##### R
