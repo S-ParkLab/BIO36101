@@ -35,8 +35,8 @@
 ###### 2. scDblFinder.R
 * Running scDblFinder to perform doublet removal.
 
-#### Python (Windows)
-##### 1. scRNA_seq_multi_with_Harmony.ipynb
+##### Python (Windows)
+###### 1. scRNA_seq_multi_with_Harmony.ipynb
 * Main downstream analysis using Scanpy.
 * Doublet removal using scDblFinder.
 * Log1p-Normalization.
@@ -47,5 +47,5 @@
 * Using the Euclidean distance metric.
 * To perform multi-sample analysis.
 
-##### 2. command_scDblFinder_Python.txt
+###### 2. command_scDblFinder_Python.txt
 * To install required packages, including scDblFinder.
