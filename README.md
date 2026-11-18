@@ -5,18 +5,17 @@
 
 ## scRNA_seq_analysis (Tutorial)
 ### R
-#### scRNA_seq_with_Seurat.R
+#### 1. scRNA_seq_with_Seurat.R
 * Retrieved & Modified R script from Seurat v5 PBMC 3k tutorial.
 * To perform single-sample analysis.
 
-### Python (Windows)
-#### scRNA_seq_with_Scanpy.ipynb
+### Python
+#### 1. scRNA_seq_with_Scanpy.ipynb (Windows)
 * Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
 * (For Windows Users)
 
-### Python (Mac)
-#### scRNA_seq_with_Scanpy.ipynb
+#### 2. scRNA_seq_with_Scanpy.ipynb (Mac)
 * Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
 * (For macOS Users)
@@ -24,7 +23,6 @@
 ## References
 #### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
 #### 2. (Tutorial) Retrieved from https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html
-#### 3. (Report) Data retrieved from GSE179633.
 ##
 #### *Deprecated*
 ##### (Although not used for reports or classes, multiple sample versions of the scripts are also provided.)
