@@ -18,9 +18,9 @@
 #### 3. (Report) Data retrieved from GSE179633.
 
 
-## scRNA_seq_analysis_multi
-## R
-### 1. scRNA_seq_multi_with_Harmony.R
+#### scRNA_seq_analysis_multi
+##### R
+###### 1. scRNA_seq_multi_with_Harmony.R
 * Main downstream analysis using Seurat.
 * Doublet removal using scDblFinder.
 * Normalization using SCTransform v2 with the Gamma-Poisson model fitting (glmGamPoi).
@@ -31,11 +31,11 @@
 * Using the Euclidean distance metric.
 * To perform multi-sample analysis.
 
-### 2. scDblFinder.R
+###### 2. scDblFinder.R
 * Running scDblFinder to perform doublet removal.
 
-## Python (Windows)
-### 1. scRNA_seq_multi_with_Harmony.ipynb
+#### Python (Windows)
+##### 1. scRNA_seq_multi_with_Harmony.ipynb
 * Main downstream analysis using Scanpy.
 * Doublet removal using scDblFinder.
 * Log1p-Normalization.
@@ -46,5 +46,5 @@
 * Using the Euclidean distance metric.
 * To perform multi-sample analysis.
 
-### 2. command_scDblFinder_Python.txt
+##### 2. command_scDblFinder_Python.txt
 * To install required packages, including scDblFinder.
