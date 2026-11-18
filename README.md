@@ -4,13 +4,22 @@
 #### (Note: This course primarily uses R and the Seurat package for single-cell data analysis.)
 
 ## scRNA_seq_analysis (Tutorial)
-### 1. scRNA_seq_with_Seurat.R
+### R
+#### scRNA_seq_with_Seurat.R
 * Retrieved & Modified R script from Seurat v5 PBMC 3k tutorial.
 * To perform single-sample analysis.
 
-### 2. scRNA_seq_with_Scanpy.ipynb
+### Python (Windows)
+#### scRNA_seq_with_Scanpy.ipynb
 * Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
 * To perform single-sample analysis.
+* (For Windows Users)
+
+### Python (Mac)
+#### scRNA_seq_with_Scanpy.ipynb
+* Retrieved & Modified .ipynb file from Scanpy PBMC 3k tutorial.
+* To perform single-sample analysis.
+* (For macOS Users)
 
 ## References
 #### 1. (Tutorial) Retrieved from https://satijalab.org/seurat/articles/pbmc3k_tutorial
